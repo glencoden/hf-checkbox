@@ -1,0 +1,38 @@
+.hf-checkbox {
+    padding: 1rem;
+}
+
+.hf-checkbox.hide-native input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.checkbox-label {
+    display: block;
+    width: 24px;
+    height: 24px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    border-radius: 4px;
+    background-color: #fff;
+    outline-offset: 2px;
+    cursor: pointer;
+}
+
+.checkbox-label svg {
+    display: none;
+    color: #fff;
+}
+
+.hf-checkbox input:focus-visible + .checkbox-label {
+    outline: 2px solid #3c3ce8;
+}
+
+.hf-checkbox input:checked + .checkbox-label {
+    background-color: #000;
+}
+
+.hf-checkbox input:checked + .checkbox-label svg {
+    display: block;
+}
